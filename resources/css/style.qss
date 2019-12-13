@@ -1,0 +1,177 @@
+QToolBar {
+  border: none;
+}
+
+QScrollBar:vertical {
+  background: palette(base);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 16px;
+  margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+  background-color: palette(alternate-base);
+  border-radius: 2px;
+  min-height: 20px;
+  margin: 2px 4px 2px 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+  background-color:palette(highlight);
+}
+
+QScrollBar::add-line:vertical {
+  background: none;
+  height: 0px;
+  subcontrol-position: right;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+  background: none;
+  height: 0px;
+  subcontrol-position: left;
+  subcontrol-origin: margin;
+}
+
+QScrollBar:horizontal{
+  background: palette(base);
+  height: 16px;
+  margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+  background-color: palette(alternate-base);
+  border-radius: 2px;
+  min-width: 20px;
+  margin: 4px 2px 4px 2px;
+}
+
+QScrollBar::handle:horizontal:hover {
+  background-color: palette(highlight);
+}
+
+QScrollBar::add-line:horizontal {
+  background: none;
+  width: 0px;
+  subcontrol-position: bottom;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+  background: none;
+  width: 0px;
+  subcontrol-position: top;
+  subcontrol-origin: margin;
+}
+
+QScrollArea {
+  border-style: none;
+}
+
+QScrollArea #scrollAreaWidgetContents {
+  background-color: palette(alternate-base);
+}
+
+QCheckBox, QRadioButton {
+	border: none;
+}
+
+QRadioButton::indicator, QCheckBox::indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 7px;
+}
+
+QRadioButton::indicator::unchecked, QCheckBox::indicator::unchecked {
+	border: 1px solid #5A5A5A;
+	background: none;
+}
+
+QRadioButton::indicator:unchecked:hover, QCheckBox::indicator:unchecked:hover {
+	/*border: 1px solid #DDDDDD;*/
+  border: 1px solid #000000;
+}
+
+QRadioButton::indicator::checked, QCheckBox::indicator::checked {
+	border: 1px solid #5A5A5A;
+	background: #5A5A5A;
+}
+
+QRadioButton::indicator:checked:hover, QCheckBox::indicator:checked:hover {
+	border: 1px solid #DDDDDD;
+	/*background: #DD5DD5;*/
+}
+
+QComboBox::down-arrow {
+	border: 1px solid #5A5A5A;
+	background: palette(alternate-base);
+}
+
+QComboBox::drop-down {
+	border: 1px solid #5A5A5A;
+	background: palette(alternate-base);
+}
+
+QComboBox::down-arrow {
+	width: 1px;
+	height: 1px;
+	border: 1px solid #5A5A5A;
+}
+
+QLabel {
+	border: 5px;
+}
+
+QMenu {
+    background-color: white;
+    margin: 2px; /* some spacing around the menu */
+}
+
+QMenu::item {
+    padding: 2px 25px 2px 20px;
+    border: 1px solid transparent; /* reserve space for selection border */
+}
+
+QMenu::item:selected {
+    border-color: darkblue;
+    background: rgba(100, 100, 100, 150);
+}
+
+QMenu::icon:checked { /* appearance of a 'checked' icon */
+    background: gray;
+    border: 1px inset gray;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+}
+
+QMenu::separator {
+    height: 2px;
+    background: lightblue;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+QMenuBar {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 lightgray, stop:1 darkgray);
+}
+
+QMenuBar::item {
+    spacing: 3px; /* spacing between menu bar items */
+    padding: 1px 4px;
+    background: transparent;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+    background: #a8a8a8;
+}
+
+QMenuBar::item:pressed {
+    background: #888888;
+}

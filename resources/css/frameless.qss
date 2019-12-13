@@ -1,0 +1,55 @@
+
+#windowFrame {
+  border-radius: 5px 5px 5px 5px;
+  /*background-color: white;            */
+  background-color: #EAEADF;            
+  border: 5px none palette(base);
+}
+
+#btnClose, #btnRestore, #btnMaximize, #btnMinimize {
+  min-width: 14px;
+  min-height: 14px;
+  max-width: 14px;
+  max-height: 14px;
+  border-radius: 7px;
+  margin: 4px;
+}
+
+#btnRestore, #btnMaximize {
+  background-color: hsv(123, 204, 198);
+}
+
+#btnRestore::hover, #btnMaximize::hover {
+  background-color: hsv(123, 204, 148);
+  background-image: url("resources/images/maximizewin.png");
+}
+
+#btnRestore::pressed, #btnMaximize::pressed {
+  background-color: hsv(123, 204, 98);
+}
+
+#btnMinimize {
+  background-color: hsv(38, 218, 253);
+}
+
+#btnMinimize::hover {
+  background-color: hsv(38, 218, 203);
+  background-image: url("resources/images/minimizewin.png");
+}
+
+#btnMinimize::pressed {
+  background-color: hsv(38, 218, 153);
+}
+
+#btnClose {
+  background-color: hsv(0, 182, 252);
+}
+
+#btnClose::hover {
+  background-color: hsv(0, 182, 202);
+  background-image: url("resources/images/closewin.png");
+}
+
+#btnClose::pressed {
+  background-color: hsv(0, 182, 152);
+}
